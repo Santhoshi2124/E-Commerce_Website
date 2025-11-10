@@ -46,15 +46,27 @@ frontend/
       ├── context/
       │     └── CartContext.js
       └── styles.css
+
+----
+
 ## ⚙️ Installation & Setup
 
 Follow these steps to set up and run the project locally 👇
 
 ### 1️⃣ Clone the Repository
 ```bash
+## Frontend
 git clone https://github.com/your-username/shopsmart.git
 cd shopsmart/frontend
 npm install
 npm start
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+
+---
+
+## Backend
+cd shopsmart/backend
+npm install
+node server.js
+
