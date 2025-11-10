@@ -11,20 +11,20 @@ It also shows the extendable flow for integrating a **Node.js + MongoDB backend*
 flowchart TD
 
 %% ======== FRONTEND LAYER ========
-A[🖥️ React.js Frontend] --> B[🎨 Tailwind CSS Styling]
-A --> C[🧠 Context API (State Management)]
-A --> D[🛒 Cart & Product Components]
+A[React.js Frontend] --> B[Tailwind CSS Styling]
+A --> C[Context API (State Management)]
+A --> D[Cart & Product Components]
 
 %% ======== DATA LAYER ========
-D --> E[💾 LocalStorage]
+D --> E[LocalStorage]
 C --> E
 
 %% ======== FUTURE EXTENSION ========
-E --> F[(🗄️ Node.js + Express API)]
-F --> G[(🍃 MongoDB Atlas Database)]
+E --> F[Node.js + Express API]
+F --> G[MongoDB Atlas Database]
 
 %% ======== USERS ========
-U[👩‍💻 User] -->|Interacts via browser| A
+U[User (Browser)] -->|Interacts via UI| A
 
 %% ======== LABELS ========
 subgraph Frontend
@@ -34,11 +34,11 @@ C
 D
 end
 
-subgraph Data Layer
+subgraph DataLayer
 E
 end
 
-subgraph Backend (Future Scope)
+subgraph BackendFuture
 F
 G
 end
